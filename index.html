@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Capao! ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIK -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- TOMBOL MUSIK -->
+    <div class="music-player">
+        <button id="musicBtn" aria-label="Putar musik">▶</button>
+
+        <div class="music-info">
+            <strong>Now Playing ♡</strong>
+            <span>Birthday Special 🎂</span>
+        </div>
+
+        <div class="music-note">♫</div>
+    </div>
+
+
+    <main class="page">
+
+        <!-- HALAMAN PEMBUKA -->
+        <section class="hero card">
+
+            <div class="tiny-label">
+                A LITTLE SURPRISE FOR YOU ♡
+            </div>
+
+            <div class="hero-art">
+                <span class="balloon balloon-one">🎈</span>
+                <span class="balloon balloon-two">🎈</span>
+                <span class="cake-emoji">🎂</span>
+                <span class="gift-emoji">🎁</span>
+            </div>
+
+            <p class="eyebrow">
+                hari spesial seseorang yang spesial
+            </p>
+
+            <h1>
+                HAPPY<br>
+                <span>BIRTHDAY CAPAO!</span>
+            </h1>
+
+            <p class="intro">
+                Hari ini harus penuh kesuraman, kesedihan, dan
+                hal-hal tidak manis. Jadi... ada kejutan kecil buat kamu! 
+            </p>
+
+            <button class="primary-btn" id="startBtn">
+                Mulai keseruannya ✨
+            </button>
+
+            <div class="scroll-note">
+                made with love ♡
+            </div>
+
+        </section>
+
+
+        <!-- MINI GAME 1 -->
+        <section class="game card" id="game">
+
+            <div class="section-tag">MINI GAME 01</div>
+
+            <h2>🎁 Tangkap hadiah!</h2>
+
+            <p class="muted">
+                Kumpulkan 5 hadiah untuk membuka kejutan rahasia!
+            </p>
+
+            <div class="score-line">
+                <span>Hadiah terkumpul</span>
+
+                <strong>
+                    <span id="score">0</span>/5
+                </strong>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="gift-area" id="giftArea">
+
+                <div class="game-hint" id="gameHint">
+                    Hadiah-hadiahnya lagi sembunyi 🙈
+                </div>
+
+            </div>
+
+            <p class="small-note">
+                Klik hadiah sebanyak 5 kali untuk menang! 💨
+            </p>
+
+            <button class="secondary-btn" id="spawnBtn">
+                Munculkan hadiah 🎀
+            </button>
+
+        </section>
+
+
+        <!-- SURAT RAHASIA -->
+        <section class="surprise card hidden" id="surprise">
+
+            <div class="section-tag">UNLOCKED! 💌</div>
+
+            <h2>Yeay, kamu berhasil!</h2>
+
+            <p class="muted">
+                Kamu berhasil mendapatkan semua hadiah.
+                Sekarang buka pesan rahasianya!
+            </p>
+
+            <button class="envelope" id="envelope">
+                💌
+                <span>tap to open</span>
+            </button>
+
+            <div class="letter hidden" id="letter">
+
+                <div class="letter-heart">♡</div>
+
+                <h3>Untuk kamu,</h3>
+
+                <p>
+                    Selamat ulang tahun! Semoga di umur yang baru ini,
+                    hal-hal baik selalu menemukan jalan ke hidupmu.
+                    Semoga kamu makin bahagia, sehat, dikelilingi
+                    orang-orang tulus, dan semua harapan kecil segera terwujud.
+                </p>
+
+                <p>
+                    Jangan lupa bahagia, jangan terlalu keras sama
+                    diri sendiri, dan tetap jadi orang hebat dengan
+                    caramu sendiri.
+                </p>
+
+                <p>
+                    You deserve all the good things! 🥹
+                </p>
+
+                <p class="signature">
+                    With lots of love, ♡
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MINI GAME 2 -->
+        <section class="cake-game card">
+
+            <div class="section-tag">MINI GAME 02</div>
+
+            <h2>🕯️ Make a wish!</h2>
+
+            <p class="muted">
+                Klik ketiga lilin untuk meniupnya.
+                Jangan lupa buat satu harapan terbaikmu!
+            </p>
+
+            <div class="big-cake">
+
+                <div class="candles">
+
+                    <button class="candle" aria-label="Tiup lilin pertama">
+                        🕯️
+                    </button>
+
+                    <button class="candle" aria-label="Tiup lilin kedua">
+                        🕯️
+                    </button>
+
+                    <button class="candle" aria-label="Tiup lilin ketiga">
+                        🕯️
+                    </button>
+
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+            <p id="wishText" class="wish-text">
+                Tiga lilin, tiga harapan. ✨
+            </p>
+
+            <button class="primary-btn" id="wishBtn">
+                Aku sudah membuat harapan 🌟
+            </button>
+
+        </section>
+
+
+        <footer>
+            made with ♡ just for your special day
+        </footer>
+
+    </main>
+
+
+    <!-- NOTIFIKASI -->
+    <div class="toast" id="toast"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
